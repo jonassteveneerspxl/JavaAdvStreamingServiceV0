@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.pxl.ja.streamingservice.controller.ContentDetailController">
+   <children>
+      <FontIcon fx:id="genreIcon" iconLiteral="mdi-magnify" layoutX="38.0" layoutY="102.0" selectionFill="BLACK" text="" wrappingWidth="82.0">
+         <font>
+            <Font size="80.0" />
+         </font>
+      </FontIcon>
+      <Label fx:id="titleLabel" layoutX="138.0" layoutY="48.0" prefHeight="44.0" prefWidth="319.0" text="Title">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="durationLabel" layoutX="142.0" layoutY="92.0" text="1h 5 min" />
+      <Button layoutX="367.0" layoutY="135.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="94.0" style="-fx-background-color: #141414;" text="Close" textFill="WHITE" onAction="#onClose"/>
+   </children>
+</AnchorPane>
