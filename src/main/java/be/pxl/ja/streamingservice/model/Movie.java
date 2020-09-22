@@ -63,5 +63,6 @@ public class Movie extends Content implements Playable {
             }
             return builder.toString();
         }
+
 }
 
