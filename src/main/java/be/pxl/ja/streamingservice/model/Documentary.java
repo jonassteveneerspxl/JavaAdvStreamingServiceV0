@@ -16,4 +16,12 @@ public class Documentary extends Movie {
     public void setTopic(String topic) {
         this.topic = topic;
     }
+
+    public void play() {
+        System.out.println("Playing " + topic);
+    }
+
+    public void pause() {
+        System.out.println("Pausing " + topic);
+    }
 }
