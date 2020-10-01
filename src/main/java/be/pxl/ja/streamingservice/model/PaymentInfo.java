@@ -2,7 +2,7 @@ package be.pxl.ja.streamingservice.model;
 
 import java.time.LocalDate;
 
-public class Paymentinfo {
+public class PaymentInfo {
     private String cardNummer;
     private CreditCardType type;
     private String firstName;
