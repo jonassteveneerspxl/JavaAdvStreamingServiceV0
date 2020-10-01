@@ -15,7 +15,6 @@ public enum Genre {
 		WESTERN("Western");
 
 		private static final String DEFAULT_ICON = "mdi-comment-question-outline";
-
 		private String displayName;
 		private String icon;
 
