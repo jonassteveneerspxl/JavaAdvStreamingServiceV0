@@ -1,6 +1,7 @@
 package be.pxl.ja.streamingservice.model;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class Profile {
     private String name;
@@ -23,7 +24,11 @@ public class Profile {
     }
 
     public int getAge(){
-        return LocalDate.now().compareTo(dateOfBirth);
+        if(dateOfBirth == null){
+            return 0;
+        }
+        return (int) ChronoUnit.YEARS.between(dateOfBirth, LocalDate.now());
+
     }
 
     public boolean allowedToWatch(Content content){
