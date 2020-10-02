@@ -23,12 +23,14 @@ public class Profile {
     }
 
     public int getAge(){
-        return dateOfBirth.compareTo(LocalDate.now());
+        return LocalDate.now().compareTo(dateOfBirth);
     }
 
     public boolean allowedToWatch(Content content){
-        return getAge() >= content.getMaturityRating().getMinimumAge();
+        if(content.getMaturityRating() != null){
+            return getAge() >= content.getMaturityRating().getMinimumAge();
+        }else {
+            return false;
+        }
     }
-
-
 }

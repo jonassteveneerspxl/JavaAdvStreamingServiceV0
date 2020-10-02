@@ -15,7 +15,7 @@ public class Account {
         this.password = password;
         Profile profile1 = new Profile();
         profile1.setName("jef");
-        profile1.setDateOfBirth(LocalDate.now());
+        profile1.setDateOfBirth(LocalDate.of(2001,1,9));
         addProfile(profile1);
     }
 
