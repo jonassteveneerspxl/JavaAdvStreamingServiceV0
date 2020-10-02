@@ -5,8 +5,9 @@ public abstract class Content {
     private Rating maturityRating;
     private String imageUrl;
 
-public Content(String title , Rating maturityRating) {
-    this.title = title;
+
+    Content(String title , Rating maturityRating) {
+        this.title = title;
         this.maturityRating = maturityRating;
     }
 

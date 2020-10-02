@@ -1,5 +1,6 @@
 package be.pxl.ja.streamingservice.model;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class Account {
@@ -8,6 +9,15 @@ public class Account {
     private PaymentInfo paymentinfo;
     private StreamingPlan streamingPlan;
     private List<Profile> profiles;
+
+    public Account(String email, String password) {
+        this.email = email;
+        this.password = password;
+        Profile profile1 = new Profile();
+        profile1.setName("jef");
+        profile1.setDateOfBirth(LocalDate.now());
+        addProfile(profile1);
+    }
 
     public void setStreamingPlan(StreamingPlan streamingPlan) {
         this.streamingPlan = streamingPlan;
@@ -29,7 +39,7 @@ public class Account {
         return true;
     }
 
-    public void setPaymentinfo(PaymentInfo paymentinfo) {
+    public void setPaymentInfo(PaymentInfo paymentinfo) {
         this.paymentinfo = paymentinfo;
     }
 

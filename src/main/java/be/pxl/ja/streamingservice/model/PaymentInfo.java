@@ -10,11 +10,11 @@ public class PaymentInfo {
     private LocalDate expirationDate;
     private int securityCode;
 
-    public String getCardNummer() {
+    public String getCardNumer() {
         return cardNummer;
     }
 
-    public void setCardNummer(String cardNummer) {
+    public void setCardNumer(String cardNummer) {
         this.cardNummer = cardNummer;
     }
 
